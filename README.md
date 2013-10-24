@@ -1,7 +1,8 @@
 No Mail.app Animations on OS X 10.9 Mavericks
 =============================================
 
-A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks
+A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks. Run on your own risk. When having issues, please remove the 
+Mailbundle again.
 
 
 How does it work?
