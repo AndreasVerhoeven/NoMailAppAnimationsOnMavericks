@@ -13,5 +13,6 @@ To disable the send-animation, we swizzle -[DocumentEditor _performSendAnimation
 
 How to Install?
 ===============
-Store plugin bundle in ~/Library/Mail/Bundles/
-and run 'defaults write com.apple.mail EnableBundles -int 1' in Terminal.app
+1) Copy AveNoAnimationsInMailPlugin.mailbundle  to ~/Library/Mail/Bundles/
+2) run 'defaults write com.apple.mail EnableBundles -int 1' in Terminal.app (without the quotes, of course)
+3) Restart Mail.app
