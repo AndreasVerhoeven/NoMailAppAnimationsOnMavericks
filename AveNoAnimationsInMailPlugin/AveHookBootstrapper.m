@@ -37,7 +37,10 @@
 {
 	// will call -[DocumentEditor _sendAnimationCompleted], due to this method being
 	// swizzled
-	[self _sendAnimationCompleted];
+	if([self respondsToSelector:@selector(_sendAnimationCompleted)])
+	{
+		[self _sendAnimationCompleted];
+	}
 }
 
 // this will never be called, but we define it so we can call it in the swizzled
