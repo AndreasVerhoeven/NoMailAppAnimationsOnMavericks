@@ -8,7 +8,7 @@ Mailbundle again.
 How does it work?
 ================
 This Plugin disables Mail.app animations in 10.9 by swizzling Mail.app's -[DocumentEditor shouldDoPopOutAnimation] to return NO always.
-To disable the sent-animation, we swizzle -[DocumentEditor _performSendAnimation] to directly class -[DocumentEditor __sendAnimationCompleted]
+To disable the send-animation, we swizzle -[DocumentEditor _performSendAnimation] to directly call -[DocumentEditor __sendAnimationCompleted]
 
 
 How to Install?
