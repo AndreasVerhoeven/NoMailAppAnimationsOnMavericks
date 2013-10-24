@@ -11,8 +11,13 @@ This Plugin disables Mail.app animations in 10.9 by swizzling Mail.app's -[Docum
 To disable the send-animation, we swizzle -[DocumentEditor _performSendAnimation] to directly call -[DocumentEditor __sendAnimationCompleted]
 
 
-How to Install?
-===============
+How to Install Automatically?
+=============================
+Download https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks/releases/download/v1.0/DisableMailAnimationsForMavericks.pkg
+and run the Installer.
+
+How to Install Manually?
+========================
 1) Copy AveNoAnimationsInMailPlugin.mailbundle  to ~/Library/Mail/Bundles/
 
 2) run 'defaults write com.apple.mail EnableBundles -int 1' in Terminal.app (without the quotes, of course)
