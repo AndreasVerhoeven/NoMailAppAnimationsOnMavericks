@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>20FAEDF4-D35C-4E18-8C5F-44AF6ADC8332</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AveNoAnimationsInMailPlugin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D8FA12DA-2CBD-4D22-BF0C-B1A35373F835</key>
+		<string>https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AveNoAnimationsInMailPlugin.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D8FA12DA-2CBD-4D22-BF0C-B1A35373F835</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D8FA12DA-2CBD-4D22-BF0C-B1A35373F835</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D8FA12DA-2CBD-4D22-BF0C-B1A35373F835</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NoMailPlugin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
