@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13B42</string>
+	<string>13C64</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -67,6 +67,8 @@
 		<string>FBE5B158-5602-4A6D-9CC5-8461B9B7054E</string>
 		<string># For mail version 7.1 (1827) on OS X Version 10.9.1</string>
 		<string>1CD40D64-945D-4D50-B12D-9CD865533506</string>
+		<string># For mail version 7.2 (1874) on OSX Version 10.9.2</string>
+		<string>88ED2D4C-D384-4BF5-8E94-B533455E6AAF</string>
 	</array>
 </dict>
 </plist>
