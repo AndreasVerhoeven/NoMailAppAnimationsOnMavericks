@@ -16,7 +16,7 @@ How to Install Automatically?
 
 1) Disable GateKeeper (System Preferences > Security & Privacy > General tab > Allow apps downloaded from: Anywhere
 
-2) Download https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks/releases/download/mail7-2/DisableMailAnimationsForMavericks.pkg
+2) Download https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks/releases/download/mail7-3/DisableMailAnimationsForMavericks.pkg
 and run the Installer.
 
 How to Install Manually?
