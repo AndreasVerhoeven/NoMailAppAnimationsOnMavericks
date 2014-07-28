@@ -63,11 +63,33 @@
 	method_exchangeImplementations(orig, repl);
 }
 
+#pragma mark - WindowTransformAnimation (Fullscreen animations)
+
+-(NSTimeInterval)duration
+{
+	return 0.0; // the animation should end immediately
+}
+
++(void)aveSwizzleWindowTransformAnimation
+{
+	// Swizzle Mail.app's -[WindowTransformAnimation duration] to be a very short animation, so
+	// the animation is not noticavle. this is for fullscreen window animations
+	Class class = NSClassFromString(@"WindowTransformAnimation");
+	Method orig = class_getInstanceMethod(class, @selector(duration));
+	Method repl = class_getInstanceMethod(self, @selector(duration));
+	NSLog(@"Ave: Swizzle addMethod [WindowTransformAnimation duration]: %p -> %p", orig, repl);
+	
+	class_addMethod(class, @selector(duration), method_getImplementation(repl), method_getTypeEncoding(repl));
+}
+
+#pragma mark - bootstrap
+
 +(void)load
 {
 	NSLog(@"Ave: Loaded, time to start swizzling");
 	[self aveSwizzlePopoutAnimation];
 	[self swizzlePerformSendAnimation];
+	[self aveSwizzleWindowTransformAnimation];
 }
 
 #pragma mark MVMailBundle class methods

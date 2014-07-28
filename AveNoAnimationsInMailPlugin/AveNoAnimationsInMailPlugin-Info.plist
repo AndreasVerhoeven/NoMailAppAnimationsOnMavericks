@@ -21,9 +21,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2013 AveApps. All rights reserved.</string>
+	<string>Copyright © 2014 AveApps. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>AveHookBootstrapper</string>
 	<key>SupportedPluginCompatibilityUUIDs</key>
