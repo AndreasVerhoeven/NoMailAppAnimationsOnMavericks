@@ -103,6 +103,7 @@
 				B2662CDC181909FD00783601 /* Sources */,
 				B2662CDD181909FD00783601 /* Frameworks */,
 				B2662CDE181909FD00783601 /* Resources */,
+				B264870419F263B200FF2405 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,6 +150,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B264870419F263B200FF2405 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/myfile",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n cp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME  $PROJECT_DIR/Output/\n zip -r -X $PROJECT_DIR/Output/$(basename \"$FULL_PRODUCT_NAME\").zip $PROJECT_DIR/Output/$FULL_PRODUCT_NAME\n cd $PROJECT_DIR/Output/\n /bin/sh $PROJECT_DIR/Output/repackage.sh\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2662CDC181909FD00783601 /* Sources */ = {
