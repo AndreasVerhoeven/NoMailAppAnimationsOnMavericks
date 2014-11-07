@@ -14,7 +14,7 @@ To disable the send-animation, we swizzle -[DocumentEditor _performSendAnimation
 How to Install Automatically?
 =============================
 
-1. Download https://github.com/AndreasVerhoeven/NoMailAppAnimationsOnMavericks/releases/download/1.1.1/DisableMailAnimationsForOSX.pkg
+1. Download the installer from the Releases page
 2. Option/right-click on the package and select Open with -> Installer.app 
 
 How to Install Manually?
