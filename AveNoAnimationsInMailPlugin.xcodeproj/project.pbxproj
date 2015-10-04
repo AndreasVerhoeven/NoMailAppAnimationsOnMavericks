@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495BBFFB1BC16D1800FC37B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495BBFFA1BC16D1800FC37B9 /* QuartzCore.framework */; };
 		B2662CE4181909FE00783601 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2662CE3181909FE00783601 /* Cocoa.framework */; };
 		B2662CEE181909FE00783601 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2662CEC181909FE00783601 /* InfoPlist.strings */; };
 		B2662CF718190A6600783601 /* AveHookBootstrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2662CF618190A6600783601 /* AveHookBootstrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		495BBFFA1BC16D1800FC37B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B2662CE0181909FD00783601 /* AveNoAnimationsInMailPlugin.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AveNoAnimationsInMailPlugin.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2662CE3181909FE00783601 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B2662CE6181909FE00783601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -30,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495BBFFB1BC16D1800FC37B9 /* QuartzCore.framework in Frameworks */,
 				B2662CE4181909FE00783601 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +60,7 @@
 		B2662CE2181909FE00783601 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				495BBFFA1BC16D1800FC37B9 /* QuartzCore.framework */,
 				B2662CE3181909FE00783601 /* Cocoa.framework */,
 				B2662CE5181909FE00783601 /* Other Frameworks */,
 			);
@@ -164,7 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n cp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME  $PROJECT_DIR/Output/\n zip -r -X $PROJECT_DIR/Output/$(basename \"$FULL_PRODUCT_NAME\").zip $PROJECT_DIR/Output/$FULL_PRODUCT_NAME\n cd $PROJECT_DIR/Output/\n /bin/sh $PROJECT_DIR/Output/repackage.sh\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" ]; then\n cp -r \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME\"  \"$PROJECT_DIR/Output/\"\n zip -r -X \"$PROJECT_DIR/Output/$(basename \"$FULL_PRODUCT_NAME\").zip\" \"$PROJECT_DIR/Output/$FULL_PRODUCT_NAME\"\n cd \"$PROJECT_DIR/Output/\"\n /bin/sh \"$PROJECT_DIR/Output/repackage.sh\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

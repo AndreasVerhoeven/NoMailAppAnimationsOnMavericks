@@ -17,7 +17,7 @@ cat /tmp/Package.unpkg/avenoanimationsinmailplugin.pkg/Payload | gzip -d | cpio 
 
 # copying files
 echo "Copying files"
-cp -r $CWD/AveNoAnimationsInMailPlugin.mailbundle /tmp/Package-inner.pkg/
+cp -r "$CWD/AveNoAnimationsInMailPlugin.mailbundle" /tmp/Package-inner.pkg/
 
 rm /tmp/Package.unpkg/avenoanimationsinmailplugin.pkg/Payload
 rm /tmp/Package.unpkg/avenoanimationsinmailplugin.pkg/Bom
@@ -36,7 +36,7 @@ echo "$NUMFILES files, $NUMKBYTES kb"
 sed -i '' -e 's/installKBytes="[-0-9]*"/installKBytes="'$NUMKBYTES'"/' /tmp/Package.unpkg/avenoanimationsinmailplugin.pkg/PackageInfo
 sed -i '' -e 's/numberOfFiles="[-0-9]*"/numberOfFiles="'$NUMFILES'"/' /tmp/Package.unpkg/avenoanimationsinmailplugin.pkg/PackageInfo
 
-pkgutil --flatten /tmp/Package.unpkg/ $CWD/DisableMailAnimationsForOSX.pkg
+pkgutil --flatten /tmp/Package.unpkg/ "$CWD/DisableMailAnimationsForOSX.pkg"
 
 rm -r /tmp/Package.unpkg 2> /dev/null
 rm -r /tmp/Package-inner.pkg 2> /dev/null
