@@ -67,6 +67,8 @@
 		<string>60D52D22-7491-4CA7-95BA-88215BD88F8E</string>
 		<string># For mail on OS X 10.11.1</string>
 		<string>AB695A2B-4605-4A74-A99F-AF9F9C92C41B</string>
+		<string># For mail on OSX 10.11.1 beta (15B38b)</string>
+		<string>DAF41AB7-F9AD-4273-9934-C81C74705B69</string>
 	</array>
 </dict>
 </plist>
