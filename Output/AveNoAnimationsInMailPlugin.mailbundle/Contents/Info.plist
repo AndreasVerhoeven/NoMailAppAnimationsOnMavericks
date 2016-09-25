@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>15D21</string>
+	<string>15G1004</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -29,17 +29,17 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>7C68</string>
+	<string>7D1014</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>15C43</string>
+	<string>15E60</string>
 	<key>DTSDKName</key>
 	<string>macosx10.11</string>
 	<key>DTXcode</key>
-	<string>0720</string>
+	<string>0731</string>
 	<key>DTXcodeBuild</key>
-	<string>7C68</string>
+	<string>7D1014</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2015 AveApps. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
@@ -91,6 +91,8 @@
 		<string>1550C683-EA48-4036-B7CE-FB6F5D13EE02</string>
 		<string># For mail version 9.3 (3119) on OSX 10.11.4 beta (15E33e)</string>
 		<string>71562B89-0D90-4588-8E94-A75B701D6443</string>
+		<string># for macOS Sierra</string>
+		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
 	</array>
 </dict>
 </plist>
