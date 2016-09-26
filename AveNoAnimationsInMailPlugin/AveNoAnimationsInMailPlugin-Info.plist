@@ -76,5 +76,10 @@
 		<string># for macOS Sierra</string>
 		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
 	</array>
+	<key>Supported10.12PluginCompatibilityUUIDs</key>
+	<array>
+		<string># mail 10.0 (macOS Sierra 10.12)</string>
+		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
+	</array>
 </dict>
 </plist>
