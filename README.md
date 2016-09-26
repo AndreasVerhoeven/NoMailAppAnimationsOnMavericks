@@ -36,7 +36,7 @@ How to Build for new Mail versions?
 5. Copy the value of the _PluginCompatibilityUUID_ key (e.g. 800E5C92-87D3-429B-8740-5C6183CD13EA)
 6. Open the project in Xcode
 7. Select the AveNoAnimationsInMailPlugin-Info.plist file
-8. Add the UUID to the SupportedPluginCompatibilityUUIDs list with a comment:
+8. Add the UUID to the _Supported10.12PluginCompatibilityUUIDs_ key on macOS Sierra (older OSes: SupportedPluginCompatibilityUUIDs) list with a comment:
 
    Item 31 # For mail version 8.0 (1988) on OSX Version 10.10  
    Item 32 800E5C92-87D3-429B-8740-5C6183CD13EA
