@@ -1,7 +1,7 @@
-No Mail.app Animations on OS X 10.9 Mavericks, 10.10 Yosemite, 10.11 El Capitan
-===============================================================================
+No Mail.app Animations on OS X 10.9 Mavericks, 10.10 Yosemite, 10.11 El Capitan, 10.12 Sierra
+=============================================================================================
 
-A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks, OS X 10.10 Yosemite, OS X 10.11 El Capitan. Run on your own risk. When having issues, please remove the 
+A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks, OS X 10.10 Yosemite, OS X 10.11 El Capitan, macOS 10.12 Sierra. Run on your own risk. When having issues, please remove the 
 Mailbundle again.
 
 
@@ -10,7 +10,7 @@ How does it work?
 This Plugin disables Mail.app animations in 10.9 and 10.10 by swizzling Mail.app's -[DocumentEditor shouldDoPopOutAnimation] to return NO always.
 To disable the send-animation, we swizzle -[DocumentEditor _performSendAnimation] to directly call -[DocumentEditor __sendAnimationCompleted]
 
-On OS X 10.11 some other methods are swizzled to make the animation duration 0.0s, effectively disabling them.
+On OS X 10.11 some other methods are swizzled to make the animation duration 0.0s, effectively disabling them. On macOS 10.12 Sierra one additional method is swizzled for this.
 
 
 How to Install Automatically?
