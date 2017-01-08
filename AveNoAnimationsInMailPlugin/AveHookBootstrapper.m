@@ -14,9 +14,9 @@
 
 static BOOL elCapitanOverrideTransactionDurationToZero = NO;
 
-+(BOOL)isElCapitan
++(BOOL)isAtLeastElCapitan
 {
-    static BOOL isElCapitan = NO;
+    static BOOL isAtLeastElCapitan = NO;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -26,11 +26,31 @@ static BOOL elCapitanOverrideTransactionDurationToZero = NO;
             NSOperatingSystemVersion version = {0};
             version.majorVersion = 10;
             version.minorVersion = 11; // el cap
-            isElCapitan = [processInfo isOperatingSystemAtLeastVersion:version];
+            isAtLeastElCapitan = [processInfo isOperatingSystemAtLeastVersion:version];
         }
     });
     
-    return isElCapitan;
+    return isAtLeastElCapitan;
+}
+
+
++(BOOL)isAtLeastSierra
+{
+	static BOOL isAtLeastSierra = NO;
+	
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		NSProcessInfo* processInfo = [NSProcessInfo processInfo];
+		if([processInfo respondsToSelector:@selector(isOperatingSystemAtLeastVersion:)])
+		{
+			NSOperatingSystemVersion version = {0};
+			version.majorVersion = 10;
+			version.minorVersion = 12; // sierra
+			isAtLeastSierra = [processInfo isOperatingSystemAtLeastVersion:version];
+		}
+	});
+	
+	return isAtLeastSierra;
 }
 
 static IMP AveReplaceMethod(Class class, BOOL isMetaClass, SEL sel, id block) {
@@ -116,6 +136,22 @@ static IMP AveReplaceClassMethod(Class class, SEL sel, id block) {
         
         elCapitanOverrideTransactionDurationToZero = NO;
     });
+}
+
+// -[ComposeWindowController _performSendAnimationWithCompletion:](void * self, void * _cmd, void * arg2) {
++(void)aveSierraSwizzleComposeWindowControllerPerformSendAnimationWithCompletion
+{
+	Class class = NSClassFromString(@"ComposeWindowController");
+	SEL sel = @selector(_performSendAnimationWithCompletion:);
+	__block IMP originalImplementation = AveReplaceInstanceMethod(class, sel, ^(id obj, id block){
+		elCapitanOverrideTransactionDurationToZero = YES;
+		if(originalImplementation != NULL)
+		{
+			((void(*)(id, SEL, id))originalImplementation)(obj, sel, block);
+		}
+		
+		elCapitanOverrideTransactionDurationToZero = NO;
+	});
 }
 
 +(void)aveElCapitanSwizzlePopoutAnimationController_animateFrom_to_withCompletion
@@ -226,6 +262,11 @@ static IMP AveReplaceClassMethod(Class class, SEL sel, id block) {
 	}
 }
 
+- (void)_performSendAnimationWithCompletion:(id)block
+{
+	NSLog(@"Ave _performSendAnimationWithCompletion: should not be called in our class!");
+}
+
 // this will never be called, but we define it so we can call it in the swizzled
 // method _performSendAnimation in this class. However, _performSendAnimation will
 // only be called in the context of DocumentEditor, so -[DocumentEditor _sendAnimationCompleted]
@@ -276,7 +317,8 @@ static IMP AveReplaceClassMethod(Class class, SEL sel, id block) {
 +(void)load
 {
 	NSLog(@"Ave: Loaded, time to start swizzling");
-    if([self isElCapitan])
+	
+    if([self isAtLeastElCapitan])
     {
         [self aveElCapitanSwizzleCATransactionSetAnimationDuration];
         [self aveElCapitanSwizzleNSAnimationContextSetDuration];
@@ -285,6 +327,11 @@ static IMP AveReplaceClassMethod(Class class, SEL sel, id block) {
         [self aveElCapitanswizzlePopoutAnimationController_internalTransitionAnimationWithDestination_fadeOut];
         [self aveElCapitanSwizzleWindowTransformAnimation__animationDurationForAnimationType];
         [self aveElCapitanSwizzleFullScreenWindowController_animateModalWindowClose];
+		
+		if([self isAtLeastSierra])
+		{
+			[self aveSierraSwizzleComposeWindowControllerPerformSendAnimationWithCompletion];
+		}
     }
     else
     {
