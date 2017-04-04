@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16C68</string>
+	<string>16E195</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -50,6 +50,8 @@
 		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
 		<string># mail 10.2 (macOS Sierra 10.12.2)</string>
 		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
+		<string># mail 10.3 (macOS Sierra 10.12.4)</string>
+		<string>21560BD9-A3CC-482E-9B99-95B7BF61EDC1</string>
 	</array>
 	<key>SupportedPluginCompatibilityUUIDs</key>
 	<array>
