@@ -26,6 +26,11 @@
 	<string>Copyright © 2017 AveApps. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>AveHookBootstrapper</string>
+	<key>Supported10.13PluginCompatibilityUUIDs</key>
+	<array>
+		<string># mail 11.0 (macOS Sierra 10.13)</string>
+		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
+	</array>
 	<key>Supported10.12PluginCompatibilityUUIDs</key>
 	<array>
 		<string># mail 10.0 (macOS Sierra 10.12)</string>
