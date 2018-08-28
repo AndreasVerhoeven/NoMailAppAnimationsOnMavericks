@@ -21,16 +21,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.3.1</string>
+	<string>1.3</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 AveApps. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>AveHookBootstrapper</string>
-	<key>Supported10.13PluginCompatibilityUUIDs</key>
-	<array>
-		<string># mail 11.0 (macOS Sierra 10.13)</string>
-		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
-	</array>
 	<key>Supported10.12PluginCompatibilityUUIDs</key>
 	<array>
 		<string># mail 10.0 (macOS Sierra 10.12)</string>
@@ -39,6 +34,8 @@
 		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
 		<string># mail 10.3 (macOS Sierra 10.12.4)</string>
 		<string>21560BD9-A3CC-482E-9B99-95B7BF61EDC1</string>
+		<string># mail 11.3 (macOS High Sierra 10.13.4</string>
+		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
 	</array>
 	<key>SupportedPluginCompatibilityUUIDs</key>
 	<array>
