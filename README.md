@@ -1,7 +1,7 @@
-No Mail.app Animations on OS X 10.9 Mavericks, 10.10 Yosemite, 10.11 El Capitan, 10.12 Sierra
+No Mail.app Animations on OS X 10.9 Mavericks, 10.10 Yosemite, 10.11 El Capitan, 10.12 Sierra, High Sierra 10.13
 =============================================================================================
 
-A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks, OS X 10.10 Yosemite, OS X 10.11 El Capitan, macOS 10.12 Sierra. Run on your own risk. When having issues, please remove the 
+A Mailbundle plugin to disable the Mail.app Send- and Reply-animations on OS X 10.9 Mavericks, OS X 10.10 Yosemite, OS X 10.11 El Capitan, macOS 10.12 Sierra, macOS 10.13.4. Run on your own risk. When having issues, please remove the 
 Mailbundle again.
 
 
