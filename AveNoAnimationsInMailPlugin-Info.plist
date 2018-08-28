@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleIdentifier</key>
+	<string>com.aveapps.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.3</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 AveApps. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>AveHookBootstrapper</string>
+	<key>Supported10.12PluginCompatibilityUUIDs</key>
+	<array>
+		<string># mail 10.0 (macOS Sierra 10.12)</string>
+		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
+		<string># mail 10.2 (macOS Sierra 10.12.2)</string>
+		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
+		<string># mail 10.3 (macOS Sierra 10.12.4)</string>
+		<string>21560BD9-A3CC-482E-9B99-95B7BF61EDC1</string>
+		<string># mail 11.3 (macOS High Sierra 10.13.4</string>
+		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
+	</array>
+	<key>SupportedPluginCompatibilityUUIDs</key>
+	<array>
+		<string># All Mail UUIDs</string>
+		<string># For mail version 7.0 (1764) on OS X Version 10.9.0 (build 13a476u)</string>
+		<string>5C1C2B58-ADCC-4202-8BE9-3185EA50FE57</string>
+		<string># For mail version 7.0 (1780.1) on OS X Version 10.9.0 (build 13a497d)</string>
+		<string>B9F62389-216B-4459-9F0C-2E379DB461C6</string>
+		<string># For mail version 7.0 (1784.1) on OS X Version 10.9.0 (build 13a510d)</string>
+		<string>FAFAC824-B040-4302-938C-D3EBF2ED2DD6</string>
+		<string># For mail version 7.0 (1786.1) on OS X Version 10.9.0 (build 13a524d)</string>
+		<string>BAF70BEF-2B7A-43CF-8C78-E5AE56543A4F</string>
+		<string># For mail version 7.0 (1793.4) on OS X Version 10.9.0 (build 13a538g)</string>
+		<string>8683C61F-0A65-4118-A1A2-D000E7331AF2</string>
+		<string># For mail version 7.0 (1800) on OS X Version 10.9.0 (build 13a558)</string>
+		<string>4C90A872-9452-46B9-8229-A7B8A8E90C46</string>
+		<string># For mail version 7.0 (1805) on OS X Version 10.9.0 (build 13a569)</string>
+		<string>CCF9E57F-98D8-4C64-82D1-5863A8F1C29C</string>
+		<string># For mail version 7.0 (1811) on OS X Version 10.9.0 (build 13a584)</string>
+		<string>72F55B63-35E4-4323-8CA7-104774A0DE95</string>
+		<string># For mail version 7.0 (1812) on OS X Version 10.9.0 (build 13A596)</string>
+		<string>04D6EC0A-52FF-4BBE-9896-C0B5FB851BBA</string>
+		<string># For mail version 7.0 (1816) on OS X Version 10.9.0 (build 13A603)</string>
+		<string>0941BB9F-231F-452D-A26F-47A43863C991</string>
+		<string># For mail version 7.0 (1822) on OS X Version 10.9.0</string>
+		<string>FBE5B158-5602-4A6D-9CC5-8461B9B7054E</string>
+		<string># For mail version 7.1 (1827) on OS X Version 10.9.1</string>
+		<string>1CD40D64-945D-4D50-B12D-9CD865533506</string>
+		<string># For mail version 7.2 (1874) on OSX Version 10.9.2</string>
+		<string>88ED2D4C-D384-4BF5-8E94-B533455E6AAF</string>
+		<string># For mail version 7.3 (1878.2) on OSX Version 10.9.3</string>
+		<string>F4C26776-22B3-4A0A-96E1-EA8E4482E0B5</string>
+		<string># For mail version 7.3 (1878.6) on OSX Version 10.9.3</string>
+		<string>D1EFE124-86FF-4751-BF00-80B2C0D6F2E4</string>
+		<string># For mail version 8.0 (1988) on OSX Version 10.10</string>
+		<string>800E5C92-87D3-429B-8740-5C6183CD13EA</string>
+		<string># For mail version 8.1 (1988) on OSX Version 10.10</string>
+		<string>7C051997-F45A-4523-B053-2D262F94C775</string>
+		<string># For mail on OSX Version 10.10.2</string>
+		<string>60D52D22-7491-4CA7-95BA-88215BD88F8E</string>
+		<string># For mail on OS X 10.11.1</string>
+		<string>AB695A2B-4605-4A74-A99F-AF9F9C92C41B</string>
+		<string># For mail on OSX 10.11.1 beta (15B38b)</string>
+		<string>DAF41AB7-F9AD-4273-9934-C81C74705B69</string>
+		<string># for mail on OSX 10.11.2 beta (15C40a)</string>
+		<string>1550C683-EA48-4036-B7CE-FB6F5D13EE02</string>
+		<string># For mail version 9.3 (3119) on OSX 10.11.4 beta (15E33e)</string>
+		<string>71562B89-0D90-4588-8E94-A75B701D6443</string>
+		<string># for macOS Sierra</string>
+		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
+	</array>
+</dict>
+</plist>
